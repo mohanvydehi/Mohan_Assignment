@@ -45,9 +45,9 @@ extension CategoryViewController: UITableViewDataSource {
 private extension CategoryViewController {
     
     func viewSetup() {
-        
-        tableViewSetup()
+ 
         viewModel.loadDummyData()
+        tableViewSetup()
     }
     
     func tableViewSetup() {

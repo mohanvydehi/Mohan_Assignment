@@ -75,6 +75,8 @@ private extension ExploreContainerViewController {
         let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50.0)
         let segmentedView = SegmentedView(frame: frame, viewModel: SegmentViewModel(segments: ExploreViewType.allCases.map({ $0.rawValue.capitalized })), delegate: self)
         self.view.addSubview(segmentedView)
+        
+        add(asChildViewController: categoryVC)
     }
     
     func add(asChildViewController viewController: UIViewController) {
@@ -98,9 +100,5 @@ private extension ExploreContainerViewController {
             childView.view.removeFromSuperview()
             childView.removeFromParent()
         }
-    }
-    
-    func updateView() {
-        
     }
 }

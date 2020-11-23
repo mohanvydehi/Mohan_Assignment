@@ -24,6 +24,9 @@
 		1853BA18256C3E3F001C12B5 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA17256C3E3F001C12B5 /* CategoryViewModel.swift */; };
 		1853BA1E256C4117001C12B5 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA1D256C4117001C12B5 /* CategoryTableViewCell.swift */; };
 		1853BA23256C4716001C12B5 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA22256C4716001C12B5 /* UIColor+Extension.swift */; };
+		1853BA28256C4BEC001C12B5 /* ThemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA27256C4BEC001C12B5 /* ThemeCollectionViewCell.swift */; };
+		1853BA2D256C4C5C001C12B5 /* ThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA2C256C4C5C001C12B5 /* ThemeViewModel.swift */; };
+		1853BA32256C4C94001C12B5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA31256C4C94001C12B5 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		1853BA17256C3E3F001C12B5 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		1853BA1D256C4117001C12B5 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		1853BA22256C4716001C12B5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		1853BA27256C4BEC001C12B5 /* ThemeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCollectionViewCell.swift; sourceTree = "<group>"; };
+		1853BA2C256C4C5C001C12B5 /* ThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewModel.swift; sourceTree = "<group>"; };
+		1853BA31256C4C94001C12B5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 			children = (
 				1853B9C0256C1A03001C12B5 /* ExploreViewModel.swift */,
 				1853BA17256C3E3F001C12B5 /* CategoryViewModel.swift */,
+				1853BA2C256C4C5C001C12B5 /* ThemeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -174,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				1853BA12256C3DEC001C12B5 /* Category.swift */,
+				1853BA31256C4C94001C12B5 /* Theme.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				1853BA1D256C4117001C12B5 /* CategoryTableViewCell.swift */,
+				1853BA27256C4BEC001C12B5 /* ThemeCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -341,9 +350,12 @@
 				1853B97A256C1662001C12B5 /* AppDelegate.swift in Sources */,
 				1853B97C256C1662001C12B5 /* SceneDelegate.swift in Sources */,
 				1853B9CC256C1E6C001C12B5 /* SegmentViewModel.swift in Sources */,
+				1853BA32256C4C94001C12B5 /* Theme.swift in Sources */,
 				1853B9BC256C17EA001C12B5 /* ExploreContainerViewController.swift in Sources */,
+				1853BA2D256C4C5C001C12B5 /* ThemeViewModel.swift in Sources */,
 				1853BA23256C4716001C12B5 /* UIColor+Extension.swift in Sources */,
 				1853B9DB256C3942001C12B5 /* TrendingViewController.swift in Sources */,
+				1853BA28256C4BEC001C12B5 /* ThemeCollectionViewCell.swift in Sources */,
 				1853BA1E256C4117001C12B5 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
