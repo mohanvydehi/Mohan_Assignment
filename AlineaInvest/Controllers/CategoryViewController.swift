@@ -1,19 +1,18 @@
 //
-//  ViewController.swift
+//  CategoryViewController.swift
 //  AlineaInvest
 //
-//  Created by Mohan on 23/11/20.
+//  Created by Mohan on 24/11/20.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class CategoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
+        view.backgroundColor = .black
     }
-
-
 }
-
