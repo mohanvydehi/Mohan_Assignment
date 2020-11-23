@@ -27,6 +27,10 @@
 		1853BA28256C4BEC001C12B5 /* ThemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA27256C4BEC001C12B5 /* ThemeCollectionViewCell.swift */; };
 		1853BA2D256C4C5C001C12B5 /* ThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA2C256C4C5C001C12B5 /* ThemeViewModel.swift */; };
 		1853BA32256C4C94001C12B5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA31256C4C94001C12B5 /* Theme.swift */; };
+		1853BA37256C5978001C12B5 /* TrendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA36256C5978001C12B5 /* TrendViewModel.swift */; };
+		1853BA3C256C5B12001C12B5 /* TrendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA3B256C5B12001C12B5 /* TrendTableViewCell.swift */; };
+		1853BA41256C5DFE001C12B5 /* Trend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA40256C5DFE001C12B5 /* Trend.swift */; };
+		1853BA46256C6833001C12B5 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA45256C6833001C12B5 /* TableHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		1853BA27256C4BEC001C12B5 /* ThemeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCollectionViewCell.swift; sourceTree = "<group>"; };
 		1853BA2C256C4C5C001C12B5 /* ThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewModel.swift; sourceTree = "<group>"; };
 		1853BA31256C4C94001C12B5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		1853BA36256C5978001C12B5 /* TrendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendViewModel.swift; sourceTree = "<group>"; };
+		1853BA3B256C5B12001C12B5 /* TrendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTableViewCell.swift; sourceTree = "<group>"; };
+		1853BA40256C5DFE001C12B5 /* Trend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trend.swift; sourceTree = "<group>"; };
+		1853BA45256C6833001C12B5 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +181,7 @@
 				1853B9C0256C1A03001C12B5 /* ExploreViewModel.swift */,
 				1853BA17256C3E3F001C12B5 /* CategoryViewModel.swift */,
 				1853BA2C256C4C5C001C12B5 /* ThemeViewModel.swift */,
+				1853BA36256C5978001C12B5 /* TrendViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -182,6 +191,7 @@
 			children = (
 				1853BA12256C3DEC001C12B5 /* Category.swift */,
 				1853BA31256C4C94001C12B5 /* Theme.swift */,
+				1853BA40256C5DFE001C12B5 /* Trend.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,6 +201,7 @@
 			children = (
 				1853B9C6256C1A6B001C12B5 /* SegmentedView.swift */,
 				1853B9CB256C1E6C001C12B5 /* SegmentViewModel.swift */,
+				1853BA45256C6833001C12B5 /* TableHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +219,7 @@
 			children = (
 				1853BA1D256C4117001C12B5 /* CategoryTableViewCell.swift */,
 				1853BA27256C4BEC001C12B5 /* ThemeCollectionViewCell.swift */,
+				1853BA3B256C5B12001C12B5 /* TrendTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -341,19 +353,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1853BA46256C6833001C12B5 /* TableHeaderView.swift in Sources */,
 				1853B9C1256C1A03001C12B5 /* ExploreViewModel.swift in Sources */,
 				1853BA13256C3DEC001C12B5 /* Category.swift in Sources */,
 				1853B9C7256C1A6B001C12B5 /* SegmentedView.swift in Sources */,
 				1853BA18256C3E3F001C12B5 /* CategoryViewModel.swift in Sources */,
 				1853B9D6256C3934001C12B5 /* ThemesViewController.swift in Sources */,
+				1853BA41256C5DFE001C12B5 /* Trend.swift in Sources */,
 				1853B9D1256C3923001C12B5 /* CategoryViewController.swift in Sources */,
 				1853B97A256C1662001C12B5 /* AppDelegate.swift in Sources */,
 				1853B97C256C1662001C12B5 /* SceneDelegate.swift in Sources */,
 				1853B9CC256C1E6C001C12B5 /* SegmentViewModel.swift in Sources */,
 				1853BA32256C4C94001C12B5 /* Theme.swift in Sources */,
 				1853B9BC256C17EA001C12B5 /* ExploreContainerViewController.swift in Sources */,
+				1853BA3C256C5B12001C12B5 /* TrendTableViewCell.swift in Sources */,
 				1853BA2D256C4C5C001C12B5 /* ThemeViewModel.swift in Sources */,
 				1853BA23256C4716001C12B5 /* UIColor+Extension.swift in Sources */,
+				1853BA37256C5978001C12B5 /* TrendViewModel.swift in Sources */,
 				1853B9DB256C3942001C12B5 /* TrendingViewController.swift in Sources */,
 				1853BA28256C4BEC001C12B5 /* ThemeCollectionViewCell.swift in Sources */,
 				1853BA1E256C4117001C12B5 /* CategoryTableViewCell.swift in Sources */,

@@ -19,13 +19,13 @@ class CategoryListViewModel {
         
         categories.removeAll()
         
-        let stocks = Category(title: "Stocks", imageTitle: "", colorHex: "948ffd")
+        let stocks = Category(title: "Stocks", imageTitle: "stocks", colorHex: "948ffd")
         categories.append(CategoryViewModel(category: stocks))
         
-        let etf = Category(title: "ETFs", imageTitle: "", colorHex: "3d36c1")
+        let etf = Category(title: "ETFs", imageTitle: "etf", colorHex: "3d36c1")
         categories.append(CategoryViewModel(category: etf))
         
-        let crypto = Category(title: "Crypto", imageTitle: "", colorHex: "fdcd30")
+        let crypto = Category(title: "Crypto", imageTitle: "crypto", colorHex: "fdcd30")
         categories.append(CategoryViewModel(category: crypto))
     }
 }

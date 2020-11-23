@@ -18,6 +18,9 @@ class CategoryTableViewCell: UITableViewCell {
     lazy var categoryImageView: UIImageView = {
         
         let imageView = UIImageView()
+        imageView.layer.cornerRadius = 20
+        imageView.layer.masksToBounds = true
+        
         return imageView
     }()
 
@@ -55,6 +58,7 @@ private extension CategoryTableViewCell {
         containerViewSetup()
         imageViewSetup()
         titleLabelSetup()
+        dividerLabelSetup()
     }
     
     func containerViewSetup() {
@@ -66,8 +70,8 @@ private extension CategoryTableViewCell {
         containerView.translatesAutoresizingMaskIntoConstraints = false
         containerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
         containerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20).isActive = true
-        containerView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10).isActive = true
-        containerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10).isActive = true
+        containerView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20).isActive = true
+        containerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20).isActive = true
         containerView.heightAnchor.constraint(equalToConstant: 80).isActive = true
     }
     
@@ -76,10 +80,10 @@ private extension CategoryTableViewCell {
         containerView.addSubview(categoryImageView)
         
         categoryImageView.translatesAutoresizingMaskIntoConstraints = false
-        categoryImageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 20).isActive = true
+        categoryImageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 40).isActive = true
         categoryImageView.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
-        categoryImageView.widthAnchor.constraint(equalToConstant: 35).isActive = true
-        categoryImageView.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        categoryImageView.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        categoryImageView.heightAnchor.constraint(equalToConstant: 40).isActive = true
     }
     
     func titleLabelSetup() {
@@ -90,5 +94,18 @@ private extension CategoryTableViewCell {
         titleLabel.leadingAnchor.constraint(equalTo: categoryImageView.trailingAnchor, constant: 20).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -20).isActive = true
         titleLabel.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+    }
+    
+    func dividerLabelSetup() {
+        
+        let label = UILabel()
+        label.backgroundColor = UIColor.lightGray.withAlphaComponent(0.2)
+        
+        contentView.addSubview(label)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
+        label.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
+        label.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        label.heightAnchor.constraint(equalToConstant: 1).isActive = true
     }
 }
