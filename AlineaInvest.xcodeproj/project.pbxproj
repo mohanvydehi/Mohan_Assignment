@@ -20,6 +20,10 @@
 		1853B9D1256C3923001C12B5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853B9D0256C3923001C12B5 /* CategoryViewController.swift */; };
 		1853B9D6256C3934001C12B5 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853B9D5256C3934001C12B5 /* ThemesViewController.swift */; };
 		1853B9DB256C3942001C12B5 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853B9DA256C3942001C12B5 /* TrendingViewController.swift */; };
+		1853BA13256C3DEC001C12B5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA12256C3DEC001C12B5 /* Category.swift */; };
+		1853BA18256C3E3F001C12B5 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA17256C3E3F001C12B5 /* CategoryViewModel.swift */; };
+		1853BA1E256C4117001C12B5 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA1D256C4117001C12B5 /* CategoryTableViewCell.swift */; };
+		1853BA23256C4716001C12B5 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853BA22256C4716001C12B5 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		1853B9D0256C3923001C12B5 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		1853B9D5256C3934001C12B5 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		1853B9DA256C3942001C12B5 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		1853BA12256C3DEC001C12B5 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		1853BA17256C3E3F001C12B5 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		1853BA1D256C4117001C12B5 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		1853BA22256C4716001C12B5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +125,7 @@
 				1853B9DF256C39DF001C12B5 /* Utilities */,
 				1853B9B8256C17A5001C12B5 /* Controllers */,
 				1853B9C5256C1A3D001C12B5 /* Views */,
+				1853BA1C256C4105001C12B5 /* Cells */,
 				1853B9BA256C17A5001C12B5 /* Models */,
 				1853B9B9256C17A5001C12B5 /* ViewModels */,
 			);
@@ -156,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				1853B9C0256C1A03001C12B5 /* ExploreViewModel.swift */,
+				1853BA17256C3E3F001C12B5 /* CategoryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -163,6 +173,7 @@
 		1853B9BA256C17A5001C12B5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1853BA12256C3DEC001C12B5 /* Category.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,8 +190,17 @@
 		1853B9DF256C39DF001C12B5 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				1853BA22256C4716001C12B5 /* UIColor+Extension.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1853BA1C256C4105001C12B5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1853BA1D256C4117001C12B5 /* CategoryTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,14 +333,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1853B9C1256C1A03001C12B5 /* ExploreViewModel.swift in Sources */,
+				1853BA13256C3DEC001C12B5 /* Category.swift in Sources */,
 				1853B9C7256C1A6B001C12B5 /* SegmentedView.swift in Sources */,
+				1853BA18256C3E3F001C12B5 /* CategoryViewModel.swift in Sources */,
 				1853B9D6256C3934001C12B5 /* ThemesViewController.swift in Sources */,
 				1853B9D1256C3923001C12B5 /* CategoryViewController.swift in Sources */,
 				1853B97A256C1662001C12B5 /* AppDelegate.swift in Sources */,
 				1853B97C256C1662001C12B5 /* SceneDelegate.swift in Sources */,
 				1853B9CC256C1E6C001C12B5 /* SegmentViewModel.swift in Sources */,
 				1853B9BC256C17EA001C12B5 /* ExploreContainerViewController.swift in Sources */,
+				1853BA23256C4716001C12B5 /* UIColor+Extension.swift in Sources */,
 				1853B9DB256C3942001C12B5 /* TrendingViewController.swift in Sources */,
+				1853BA1E256C4117001C12B5 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
