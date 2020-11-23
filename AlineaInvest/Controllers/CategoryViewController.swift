@@ -46,6 +46,7 @@ private extension CategoryViewController {
     
     func viewSetup() {
  
+        view.backgroundColor = UIColor(hex: "f8fafb")
         viewModel.loadDummyData()
         tableViewSetup()
     }
@@ -57,6 +58,8 @@ private extension CategoryViewController {
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
+        tableView.backgroundColor = .clear
+        tableView.backgroundView = nil
         tableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: "CategoryTableViewCell")
         
         view.addSubview(tableView)

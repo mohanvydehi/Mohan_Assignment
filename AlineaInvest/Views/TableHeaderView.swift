@@ -44,6 +44,5 @@ private extension TableHeaderView {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
         titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 30).isActive = true
-        titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20).isActive = true
     }
 }

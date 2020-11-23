@@ -52,6 +52,6 @@ struct TrendViewModel {
     }
     
     var valueBackgroundColor: UIColor {
-        return UIColor(hex: "38d6a4") // "f95159"
+        return UIColor(hex: "f95159") // "38d6a4"
     }
 }

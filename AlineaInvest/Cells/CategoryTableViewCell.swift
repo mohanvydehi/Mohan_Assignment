@@ -55,6 +55,7 @@ private extension CategoryTableViewCell {
     func cellSetup() {
         
         selectionStyle = .none
+        contentView.backgroundColor = .white
         containerViewSetup()
         imageViewSetup()
         titleLabelSetup()

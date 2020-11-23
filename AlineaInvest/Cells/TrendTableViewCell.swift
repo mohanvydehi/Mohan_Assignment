@@ -42,7 +42,8 @@ class TrendTableViewCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         label.textColor = .white
-        label.layer.cornerRadius = 10 
+        label.layer.cornerRadius = 10
+        label.textAlignment = .center
         label.layer.masksToBounds = true
         
         return label
@@ -115,7 +116,7 @@ private extension TrendTableViewCell {
         valueLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20).isActive = true
         valueLabel.leadingAnchor.constraint(equalTo: titleLabel.trailingAnchor, constant: 12).isActive = true
         valueLabel.widthAnchor.constraint(equalToConstant: 80).isActive = true
-        valueLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        valueLabel.heightAnchor.constraint(equalToConstant: 24).isActive = true
     }
     
     func dividerLabelSetup() {
